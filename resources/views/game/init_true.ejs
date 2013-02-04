@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Game</title>
+
+	<script type="text/javascript" src="./js/extra/glge-compiled.js"></script>
+	<script type="text/javascript" src="./js/extra/reqwest.min.js"></script>
+	<script type="text/javascript" src="./js/extra/socket.io.js"></script>
+
+	<script type="text/javascript" src="./js/MG.js"></script>
+	<script type="text/javascript" src="./js/MG.Extend.js"></script>
+	<script type="text/javascript">
+		MG.Socket = io.connect('http://<%=host%>');
+		MG.Socket.on('init', function (data) {
+			new MG.Core.Game(data);
+		});
+	</script>
+
+	<script type="text/javascript" src="./js/d3/init.js"></script>
+	<script type="text/javascript" src="./js/d3/material.js"></script>
+	<script type="text/javascript" src="./js/d3/player.js"></script>
+	<script type="text/javascript" src="./js/d3/map.js"></script>
+
+	<script type="text/javascript" src="./js/core/game.js"></script>
+	<script type="text/javascript" src="./js/core/transform.js"></script>
+	<script type="text/javascript" src="./js/core/map.js"></script>
+	<script type="text/javascript" src="./js/core/player.js"></script>
+
+	<script type="text/javascript" src="./js/ui/chat.js"></script>
+	<script type="text/javascript" src="./js/ui/canvas.js"></script>
+	<script type="text/javascript" src="./js/ui/skills.js"></script>
+	<script type="text/javascript" src="./js/ui/profile.js"></script>
+	<script type="text/javascript" src="./js/ui/bar.js"></script>
+	<script type="text/javascript" src="./js/ui/options.js"></script>
+
+	<script type="text/javascript" src="./js/i18n/<%=i18n[lang].LANG%>.js"></script>
+	
+	<link href="./style/game/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body data-spy="scroll" data-target=".subnav" data-offset="50">
+	<div id="body">
+	</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">The Game</a>
+          <div class="nav-collapse">
+            <ul class="nav pull-right">
+				<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%=i18n[lang].language%> <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="./lang/0">English</a></li>
+                      <li><a href="./lang/1">Italiano</a></li>
+                    </ul>
+				</li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+	
+        <div class="row">
+			<div class="span6 offset1">
+				<ul class="thumbnails">
+					<li class="span6">
+						<a href="#" class="thumbnail">
+							<img src="./img/index/presentation.jpg">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="span4">
+				<form class="well" method="post" action="/login">
+					<input type="hidden" name="_csrf" value="<%=token%>">
+					<table class="span3">
+						<tr>
+							<td colspan="2">
+								<input type="text" class="span3" placeholder="<%=i18n[lang].mailAddress%>" name="user" title="<%=i18n[lang].mailAddress%>" autocomplete="on">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="password" class="span3" placeholder="<%=i18n[lang].password%>" name="password" title="<%=i18n[lang].password%>">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="checkbox">
+									<input type="checkbox" value="1" name="remember_me"> <%=i18n[lang].remember%>
+								</label>
+							</td>
+							<td align="right">
+								<button type="submit" class="btn btn-primary"><%=i18n[lang].login%></button>
+							</td>
+						</tr>
+					</table>
+					<div style="clear:both;><hr>
+						<p align="right"><a href="/account/resend_password"><%=i18n[lang].forgotPassword%></a></p>
+					</div>
+				</form>
+			</div>
+			<div class="span4">
+				<form class="well" method="post" action="/register">
+					Registrati<br>
+					<input type="text" class="input-text" name="user" title="<%=i18n[lang].mailAddress%>" autocomplete="on" placeholder="<%=i18n[lang].mailAddress%>">
+					<input type="password" class="input-password" name="password" title="<%=i18n[lang].password%>" placeholder="<%=i18n[lang].password%>">
+					<input type="hidden" name="_csrf" value="<%=token%>">
+					<input type="submit" class="input-submit" value="<%=i18n[lang].register%>" />
+				</form>
+			</div>
+		</div>
+		
+		<hr>
+		
+		<footer class="footer">
+			<span>Copyright 2012</span>
+			<p class="pull-right">
+				<span><a href="#"><%=i18n[lang].privacy%></a><span>
+				|
+				<span><a href="#"><%=i18n[lang].conditions%></a><span>
+			</p>
+		</footer>
+		
+
+    </div> <!-- /container -->
+
+

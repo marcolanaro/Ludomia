@@ -1,0 +1,71 @@
+MG = {
+	const: {
+		DIST_HEIGHT: 20,
+		DIST_RADIUS: 30
+	},
+
+	// Funzioni
+	Req,
+	Extend,
+	addMaterial,
+	getMaterial,
+	Core: {
+		// dijkstra.js
+		Dijkstra,
+
+		// game.js
+		Game,
+
+		// map.js
+		Map,
+
+		// material.js
+		Material,
+
+		// player.js
+		Player,
+
+		// socket.js
+		Socket,
+
+		// transform.js
+		Coord2Loc,
+		Vec2Coord,
+		Coord2Vec,
+		OffsetDepth,
+		OffsetWeight,
+		toLateralCoord,
+		toCentralCoord,
+	},
+	UI: {
+		// canvas.js
+		Canvas,
+
+		// skills.js
+		Skills
+	},
+	D3: {
+		// init.js
+		Init
+	},
+
+	// Oggetti
+	Publisher,
+	mesh: {
+		cube
+	},
+	Socket,
+	maps: [],
+	textures: [],
+	materials: [],
+	users: [],
+	skills,
+	profile,
+	camera,
+	canvas,
+	renderer,
+	light,
+	scene,
+	userId,
+	mapId
+};

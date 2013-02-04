@@ -1,0 +1,6 @@
+<form method="post" action="/register">
+	<input type="text" name="user" />
+	<input type="password" name="password" />
+	<% if (typeof flash != "undefined") { %><%=flash.info%><% } %>
+	<input type="submit" value="Register" />
+</form>

@@ -1,0 +1,45 @@
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<div class="nav-collapse">
+				<ul class="nav">
+					<li><img src="./img/users/1.png" style="border:0px;width:35px;height:35px;"></li>
+					<li><a href="#"><%=user.name%></a></li>
+				</ul>
+				<ul class="nav pull-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><%=i18n[lang].language%> <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="./lang/0">English</a></li>
+							<li><a href="./lang/1">Italiano</a></li>
+						</ul>
+					</li>
+					<li><a href="/logout"><%=i18n[lang].logout%></a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="span4">
+			<p><a href="/game/create" class="btn btn-primary"><i class="icon-play-circle icon-white"></i> <%=i18n[lang].newGame%></a></p>
+		</div>
+		<div class="span8">
+			<% if (rooms.length == 0) { %>
+			<h3><%=i18n[lang].noRoom%></h3>
+			<% } else { %>
+			<h3><%=i18n[lang].chooseRoom%></h3>
+			<% for (var i = 0; i < rooms.length; i += 1) { %>				
+				<p><a href="/game/<%=rooms[i]%>" class="btn"><i class="icon-plus-sign"></i> <%=i18n[lang].room%> <%=rooms[i]%></a></p>
+			<% } } %>
+		</div>
+
+	</div>
+</div>

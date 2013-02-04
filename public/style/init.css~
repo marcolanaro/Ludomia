@@ -1,0 +1,14 @@
+div.group {
+	position:absolute;
+	top:0px;
+	height:100%;
+	width:30%;
+	background-color:green;
+}
+#group1 {
+	left:0px;
+}
+#group2 {
+	right:0px;
+}
+

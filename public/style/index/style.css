@@ -1,0 +1,248 @@
+body {
+	margin: 0px;
+}
+a {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: underline;
+}
+hr {
+	border:0;
+	border-top:1px solid #ddd;
+}
+ul {
+	list-style-type: none;
+	margin: 20px auto;
+	padding: 0;
+}
+li a {
+	height: 60px;
+	-webkit-border-radius: 25px;
+	   -moz-border-radius: 25px;
+	        border-radius: 25px;
+	margin: 0 0 10px 0;
+	-webkit-font-smoothing: antialiased;
+	text-rendering:optimizeLegibility;
+	overflow: hidden;
+	padding-bottom: 10px;
+	text-overflow: ellipsis;
+	color: #ffffff !important;
+	text-shadow: 2px 2px 10px #000, 2px 2px 2px #fff !important;
+	text-decoration: none;
+	display: block;
+	padding: 20px;
+	font-family: 'Eater', cursive;
+	font-size:40px !important;
+	line-height:60px;
+}
+li.standard a {
+    background:
+      -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.1)), color-stop(0.5, rgba(255,255,255,0.2)), color-stop(0.501, rgba(255,255,255,0.1)), to(rgba(255,255,255,0.1))),
+      -webkit-gradient(linear, left top, left bottom, from(#0074ae), to(#073c66));
+    background:
+      -webkit-linear-gradient(rgba(0,0,0,0.1), rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.1) 50.01%, rgba(255,255,255,0.1)),
+      -webkit-linear-gradient(#0074ae, #073c66);
+    background:
+      -moz-linear-gradient(rgba(0,0,0,0.1), rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.1) 50.01%, rgba(255,255,255,0.1)),
+      -moz-linear-gradient(#0074ae, #073c66);
+    background:
+      -ms-linear-gradient(rgba(0,0,0,0.1), rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.1) 50.01%, rgba(255,255,255,0.1)),
+      -ms-linear-gradient(#0074ae, #073c66);
+    background:
+      -o-linear-gradient(rgba(0,0,0,0.1), rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.1) 50.01%, rgba(255,255,255,0.1)),
+      -o-linear-gradient(#0074ae, #073c66);
+    background:
+      linear-gradient(rgba(0,0,0,0.1), rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.1) 50.01%, rgba(255,255,255,0.1)),
+      linear-gradient(#0074ae, #073c66);  
+}
+@font-face {
+  font-family: 'Eater';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Eater'), local('Eater-Regular'), url('9-lswE9dlkJOKjTTLVZ4tQ.woff') format('woff');
+}
+#title {margin:0px;
+	text-rendering:optimizeLegibility;
+	font-variant: small-caps;
+	text-align: center;
+	font-family: 'Eater', cursive;
+	font-size: 120px;
+	text-shadow: 0px -1px 9px rgba(0,0,0,0.4);
+	-webkit-animation:myTitle 5s linear 0 infinite;
+	   -moz-animation:myTitle 5s linear 0 infinite;
+}
+#title span:nth-child(6n+1) { color: #A839B2; }
+#title span:nth-child(6n+2) { color: #FF0071; }
+#title span:nth-child(6n+3) { color: #ACD030; }
+#title span:nth-child(6n+4) { color: #58AA00; }
+#title span:nth-child(6n+5) { color: #00AA78; }
+#title span:nth-child(6n+6) { color: #0074AE; }
+input[type=text], input[type=password] {
+	padding-left:10px;
+	margin:5px;
+	border:1px solid #ccc;
+
+	height:35px;
+	-moz-border-radius:4px;
+	     border-radius:4px;
+	-webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.1) inset;
+	   -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.1) inset;
+	        box-shadow:0 0 10px rgba(0, 0, 0, 0.1) inset;
+	text-shadow:0 1px 0 #fff;
+	font-size:12px;
+	font:italic 13px Georgia,Times New Roman,serif;
+}
+input[type=submit] {
+	
+	height:35px;
+	margin:5px;
+}
+.input-text {
+	width: 260px;
+}
+.input-password {
+	width: 170px;
+}
+.input-submit {
+	width: 75px;
+}
+#body {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: -webkit-radial-gradient(50% 50%, circle, white 50px, #a8d1ff 400px);
+	background:    -moz-radial-gradient(50% 50%, circle, white 50px, #a8d1ff 400px);
+	background:         radial-gradient(50% 50%, circle, white 50px, #a8d1ff 400px);
+}
+.front-container {
+	position:absolute;
+	width: 800px;
+	height: 350px;
+	top:50%;
+	left:50%;
+	margin-top:-175px;
+	margin-left:-400px;
+	-webkit-animation:myFront .5s linear;
+	   -moz-animation:myFront .5s linear;
+}
+.front-presentation {
+	position:absolute;
+	width:480px;
+	height:100%;
+	left:0px;
+}
+.front-form {
+	position:absolute;
+	width:320;
+	height:100%;
+	right:0px;
+}
+.front {
+	background:#ffffff;
+	margin: 5px;
+	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0px 0px 40px rgba(0, 0, 0, 0.1) inset;
+	   -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0px 0px 40px rgba(0, 0, 0, 0.1) inset;
+	        box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0px 0px 40px rgba(0, 0, 0, 0.1) inset;
+	-webkit-border-radius:5px;
+	   -moz-border-radius:5px;
+	        border-radius:5px;
+}
+.front div, .front span, .front a {
+	font-size: 14px;
+	text-shadow: 2px 2px 6px #fff;
+	color: #000;
+}
+span.title {
+	font-size: 18px;
+	text-shadow: 0px 0px 1px #fff, 0px 0px 5px #aaa;
+	color: #222;
+}
+.front-news {
+	width:470px;
+	height:340px;
+	background:#ddd url(news.jpg) no-repeat center center;
+}
+.front-login {
+	padding-top: 20px;
+	width:310px;
+	height:145px;
+}
+.front-register {
+	padding-top: 10px;
+	margin-top:10px;
+	width: 310px;
+	height:155px;
+}
+.front-int {
+	margin-left:20px;
+	margin-right:20px;
+}
+.remember {
+	cursor: pointer;
+}
+.front-menu {
+	margin:0px;
+	height: 50px;
+	padding:2px;
+	-webkit-border-radius:0px;
+	   -moz-border-radius:0px;
+	        border-radius:0px;
+}
+.front-menu div {
+	position: absolute;
+	height:50px;
+}
+.front-selection {
+	margin-top:20px;
+	padding:20px;
+	
+}
+#photo {
+	width:50px;
+	background:transparent url(../../img/users/1.png) no-repeat center center;
+	-webkit-border-radius:5px;
+	   -moz-border-radius:5px;
+	        border-radius:5px;
+}
+#info {
+	width:150px;
+	left: 60px;
+	border-right: thin dotted #000;
+}
+#create {
+	left: 250px;
+	right: 170px;
+	line-height:50px;
+}
+#logout {
+	width:150px;
+	right: 0px;
+	line-height:50px;
+	text-align:center;
+	border-left: thin dotted #000;
+}
+@-moz-keyframes myFront {
+	0%{ opacity:0;}
+	50%{ opacity:0;}
+	100%{ opacity:1;}
+}
+@-webkit-keyframes myFront {
+	0%{ opacity:0;}
+	50%{ opacity:0;}
+	100%{ opacity:1;}
+}
+@-moz-keyframes myTitle {
+	0%{text-shadow: 0px -1px 9px rgba(0,0,0,0.4);}
+	50%{text-shadow: 0px -1px 10px rgba(255,255,255,1), 0px -1px 15px rgba(255,255,255,1), 0px -1px 30px rgba(0,0,0,1);}
+	100%{text-shadow: 0px -1px 9px rgba(0,0,0,0.4);}
+}
+@-webkit-keyframes myTitle {
+	0%{text-shadow: 0px -1px 9px rgba(0,0,0,0.4);}
+	50%{text-shadow: 0px -1px 10px rgba(255,255,255,1), 0px -1px 15px rgba(255,255,255,1), 0px -1px 30px rgba(0,0,0,1);}
+	100%{text-shadow: 0px -1px 9px rgba(0,0,0,0.4);}
+}
+.rightAlign {
+	text-align: right;
+}
